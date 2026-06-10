@@ -102,64 +102,64 @@
 /* ===== NAVBAR FIX FOR DESKTOP ===== */
 
 /* 1. Prevent header-right from wrapping */
-.header-default .header-right {
+/* .header-default .header-right {
     flex-wrap: nowrap !important;
-}
+} */
 
 /* 2. Keep mainmenu in one line */
-.mainmenu-nav .mainmenu {
+/* .mainmenu-nav .mainmenu {
     flex-wrap: nowrap !important;
     white-space: nowrap !important;
-}
+} */
 
 /* 3. Reduce menu item padding so everything fits */
-.mainmenu-nav .mainmenu > li > a {
+/* .mainmenu-nav .mainmenu > li > a {
     padding: 0 12px !important;
     font-size: 15px !important;
     white-space: nowrap !important;
-}
+} */
 
 /* 4. Fix logo size - was 300px height which is way too big */
-.header-default .logo a img {
+/* .header-default .logo a img {
     height: 60px !important;
     width: auto !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     object-fit: contain !important;
-}
+} */
 
-.header-default .logo a {
+/* .header-default .logo a {
     height: 80px !important;
     line-height: 80px !important;
     padding-top: 0 !important;
-}
+} */
 
 /* 5. Header button adjustments */
-.header-right.with-search .header-btn {
+/* .header-right.with-search .header-btn {
     flex-wrap: nowrap !important;
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
     margin-left: 10px !important;
-}
+} */
 
 /* 6. Make header row align properly */
-.tmp-header .container .row {
+/* .tmp-header .container .row {
     flex-wrap: nowrap !important;
-}
+} */
 
 /* 7. Ensure nav column takes available space */
-.tmp-header .col-xl-10,
+/* .tmp-header .col-xl-10,
 .tmp-header .col-lg-10 {
     flex: 0 0 auto;
     width: 83.333333%;
-}
+} */
 
-.tmp-header .col-xl-2,
+/* .tmp-header .col-xl-2,
 .tmp-header .col-lg-2 {
     flex: 0 0 auto;
     width: 16.666667%;
-}
+} */
 
 
 
@@ -32279,6 +32279,3 @@ body.tmp-body-star::before {
 
 
 
-/* ===== NAVBAR FIX FOR DESKTOP ===== */
-
-/* 1. Prevent header-right from wrapping */
