@@ -32293,44 +32293,39 @@ body.tmp-body-star::before {
     white-space: nowrap !important;
 }
 
-/* 3. Reduce menu item padding so everything fits */
+/* 3. Menu item spacing */
 .mainmenu-nav .mainmenu > li > a {
     padding: 0 10px !important;
     font-size: 14px !important;
     white-space: nowrap !important;
-    height: 100px !important;
-    line-height: 100px !important;
 }
 
-/* 4. BIG centered logo */
-.header-default .logo {
+/* 4. BIG centered logo - ONLY in desktop header, NOT mobile menu */
+header.tmp-header .logo {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    height: 110px !important;
 }
 
-.header-default .logo a {
+header.tmp-header .logo a {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    height: 110px !important;
-    line-height: 110px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
-.header-default .logo a img {
-    height: 110px !important;
+header.tmp-header .logo a img {
+    height: 120px !important;
     width: auto !important;
-    max-width: 180px !important;
+    max-width: 200px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     object-fit: contain !important;
     display: block !important;
 }
 
-/* 5. Make header row tall and centered */
+/* 5. Make header row aligned */
 .tmp-header .container .row {
     flex-wrap: nowrap !important;
     align-items: center !important;
@@ -32345,35 +32340,31 @@ body.tmp-body-star::before {
     margin-left: 10px !important;
 }
 
-/* 7. Ensure nav column takes available space */
-.tmp-header .col-xl-10,
-.tmp-header .col-lg-10 {
-    flex: 0 0 auto;
-    width: 83.333333%;
-}
-
-.tmp-header .col-xl-2,
-.tmp-header .col-lg-2 {
-    flex: 0 0 auto;
-    width: 16.666667%;
+/* 7. Logo column centered */
+header.tmp-header .col-xl-2,
+header.tmp-header .col-lg-2 {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
-/* 8. Center the navbar content vertically */
-.header-default .header-right {
-    align-items: center !important;
-    height: 110px !important;
+/* 8. Make sure popup-mobile-menu is HIDDEN on desktop */
+@media only screen and (min-width: 992px) {
+    .popup-mobile-menu {
+        display: none !important;
+    }
 }
 
-.mainmenu-nav {
-    display: flex !important;
-    align-items: center !important;
-    height: 110px !important;
+/* 9. Hide mobile menu bar on desktop */
+@media only screen and (min-width: 992px) {
+    .mobile-menu-bar {
+        display: none !important;
+    }
 }
 
-/* 9. Header overall height */
-.tmp-header {
-    min-height: 110px !important;
+/* 10. Override the inline style that makes logo too big */
+.logo a img[style] {
+    height: 120px !important;
+    width: auto !important;
+    margin-bottom: 0 !important;
 }
