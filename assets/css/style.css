@@ -32276,3 +32276,104 @@ body.tmp-body-star::before {
         height: 160px;
     }
 }
+
+
+
+/* ===== NAVBAR FIX FOR DESKTOP ===== */
+
+/* 1. Prevent header-right from wrapping */
+.header-default .header-right {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+}
+
+/* 2. Keep mainmenu in one line */
+.mainmenu-nav .mainmenu {
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+}
+
+/* 3. Reduce menu item padding so everything fits */
+.mainmenu-nav .mainmenu > li > a {
+    padding: 0 10px !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    height: 100px !important;
+    line-height: 100px !important;
+}
+
+/* 4. BIG centered logo */
+.header-default .logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 110px !important;
+}
+
+.header-default .logo a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 110px !important;
+    line-height: 110px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.header-default .logo a img {
+    height: 110px !important;
+    width: auto !important;
+    max-width: 180px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+/* 5. Make header row tall and centered */
+.tmp-header .container .row {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+}
+
+/* 6. Header button adjustments */
+.header-right.with-search .header-btn {
+    flex-wrap: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-left: 10px !important;
+}
+
+/* 7. Ensure nav column takes available space */
+.tmp-header .col-xl-10,
+.tmp-header .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.333333%;
+}
+
+.tmp-header .col-xl-2,
+.tmp-header .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.666667%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 8. Center the navbar content vertically */
+.header-default .header-right {
+    align-items: center !important;
+    height: 110px !important;
+}
+
+.mainmenu-nav {
+    display: flex !important;
+    align-items: center !important;
+    height: 110px !important;
+}
+
+/* 9. Header overall height */
+.tmp-header {
+    min-height: 110px !important;
+}
