@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89B927"/>
+      <stop offset="100%" stop-color="#5a8a00"/>
+    </linearGradient>
+    <filter id="glow5">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#0b1929" stroke="url(#g5)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="rgba(137,185,39,0.2)" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- People group - 3 people -->
+  <!-- Center person -->
+  <circle cx="100" cy="58" r="14" fill="none" stroke="#89B927" stroke-width="2.5" filter="url(#glow5)"/>
+  <path d="M78 125 Q78 90 100 85 Q122 90 122 125" fill="none" stroke="#89B927" stroke-width="2.5" filter="url(#glow5)"/>
+  <!-- Left person -->
+  <circle cx="65" cy="68" r="11" fill="none" stroke="#a4d63a" stroke-width="2" opacity="0.7"/>
+  <path d="M48 125 Q48 98 65 93 Q82 98 82 125" fill="none" stroke="#a4d63a" stroke-width="2" opacity="0.7"/>
+  <!-- Right person -->
+  <circle cx="135" cy="68" r="11" fill="none" stroke="#a4d63a" stroke-width="2" opacity="0.7"/>
+  <path d="M118 125 Q118 98 135 93 Q152 98 152 125" fill="none" stroke="#a4d63a" stroke-width="2" opacity="0.7"/>
+  <!-- Connecting arc -->
+  <path d="M65 95 Q100 75 135 95" fill="none" stroke="#89B927" stroke-width="1.5" opacity="0.3" stroke-dasharray="4,3"/>
+  <!-- AI brain above center person -->
+  <g transform="translate(100,35)" filter="url(#glow5)">
+    <circle cx="0" cy="0" r="10" fill="rgba(137,185,39,0.15)" stroke="#89B927" stroke-width="1.5">
+      <animate attributeName="r" values="10;13;10" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="4" text-anchor="middle" font-size="9" font-weight="900" fill="#89B927" font-family="Arial">AI</text>
+  </g>
+  <!-- HR badge -->
+  <rect x="75" y="140" width="50" height="22" rx="11" fill="rgba(137,185,39,0.1)" stroke="rgba(137,185,39,0.4)" stroke-width="1.5"/>
+  <text x="100" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#89B927" font-family="Arial">HRMS</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89B927"/>
+      <stop offset="100%" stop-color="#5a8a00"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#0b1929" stroke="url(#g3)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="rgba(137,185,39,0.2)" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Shopping cart -->
+  <path d="M55 70 L70 70 L85 120 L150 120" stroke="#89B927" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow3)"/>
+  <path d="M80 85 L155 85 L145 115 L85 115" fill="rgba(137,185,39,0.1)" stroke="none"/>
+  <path d="M80 85 L155 85 L145 115 L85 115Z" fill="none" stroke="#89B927" stroke-width="2" stroke-linejoin="round" filter="url(#glow3)"/>
+  <!-- Cart wheels -->
+  <circle cx="95" cy="132" r="8" fill="none" stroke="#a4d63a" stroke-width="2.5"/>
+  <circle cx="95" cy="132" r="3" fill="#89B927" opacity="0.5"/>
+  <circle cx="138" cy="132" r="8" fill="none" stroke="#a4d63a" stroke-width="2.5"/>
+  <circle cx="138" cy="132" r="3" fill="#89B927" opacity="0.5"/>
+  <!-- AI sparkle on cart -->
+  <g transform="translate(130,72)" filter="url(#glow3)">
+    <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#a4d63a" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  <!-- Wifi/signal waves -->
+  <path d="M118 55 Q125 48 132 55" fill="none" stroke="#89B927" stroke-width="1.5" opacity="0.4"/>
+  <path d="M115 48 Q125 38 135 48" fill="none" stroke="#89B927" stroke-width="1.5" opacity="0.3"/>
+  <path d="M112 41 Q125 28 138 41" fill="none" stroke="#89B927" stroke-width="1.5" opacity="0.2"/>
+  <!-- Items in cart -->
+  <rect x="95" y="90" width="14" height="16" rx="2" fill="rgba(137,185,39,0.2)" stroke="#89B927" stroke-width="1" opacity="0.6"/>
+  <rect x="115" y="92" width="14" height="14" rx="2" fill="rgba(137,185,39,0.15)" stroke="#89B927" stroke-width="1" opacity="0.5"/>
+</svg>

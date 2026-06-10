@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89B927"/>
+      <stop offset="100%" stop-color="#5a8a00"/>
+    </linearGradient>
+    <filter id="glow6">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#0b1929" stroke="url(#g6)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="rgba(137,185,39,0.2)" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Central hub -->
+  <circle cx="100" cy="95" r="22" fill="rgba(137,185,39,0.1)" stroke="#89B927" stroke-width="2.5" filter="url(#glow6)"/>
+  <text x="100" y="100" text-anchor="middle" font-size="12" font-weight="900" fill="#89B927" font-family="Arial">ERP</text>
+  <!-- Connected nodes -->
+  <!-- Top -->
+  <line x1="100" y1="73" x2="100" y2="48" stroke="#89B927" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="100" cy="42" r="14" fill="rgba(137,185,39,0.06)" stroke="#a4d63a" stroke-width="2"/>
+  <text x="100" y="46" text-anchor="middle" font-size="8" fill="#a4d63a" font-family="Arial">FIN</text>
+  <!-- Bottom -->
+  <line x1="100" y1="117" x2="100" y2="142" stroke="#89B927" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="100" cy="148" r="14" fill="rgba(137,185,39,0.06)" stroke="#a4d63a" stroke-width="2"/>
+  <text x="100" y="152" text-anchor="middle" font-size="8" fill="#a4d63a" font-family="Arial">MFG</text>
+  <!-- Left -->
+  <line x1="78" y1="95" x2="52" y2="95" stroke="#89B927" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="45" cy="95" r="14" fill="rgba(137,185,39,0.06)" stroke="#a4d63a" stroke-width="2"/>
+  <text x="45" y="99" text-anchor="middle" font-size="8" fill="#a4d63a" font-family="Arial">SCM</text>
+  <!-- Right -->
+  <line x1="122" y1="95" x2="148" y2="95" stroke="#89B927" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="155" cy="95" r="14" fill="rgba(137,185,39,0.06)" stroke="#a4d63a" stroke-width="2"/>
+  <text x="155" y="99" text-anchor="middle" font-size="8" fill="#a4d63a" font-family="Arial">CRM</text>
+  <!-- Top-Left -->
+  <line x1="84" y1="80" x2="66" y2="62" stroke="#89B927" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="60" cy="56" r="10" fill="rgba(137,185,39,0.04)" stroke="#a4d63a" stroke-width="1.5" opacity="0.7"/>
+  <text x="60" y="59" text-anchor="middle" font-size="7" fill="#a4d63a" opacity="0.7" font-family="Arial">HR</text>
+  <!-- Top-Right -->
+  <line x1="116" y1="80" x2="134" y2="62" stroke="#89B927" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="140" cy="56" r="10" fill="rgba(137,185,39,0.04)" stroke="#a4d63a" stroke-width="1.5" opacity="0.7"/>
+  <text x="140" y="59" text-anchor="middle" font-size="6" fill="#a4d63a" opacity="0.7" font-family="Arial">PROC</text>
+  <!-- Bottom-Left -->
+  <line x1="84" y1="110" x2="66" y2="128" stroke="#89B927" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="60" cy="134" r="10" fill="rgba(137,185,39,0.04)" stroke="#a4d63a" stroke-width="1.5" opacity="0.7"/>
+  <text x="60" y="137" text-anchor="middle" font-size="6" fill="#a4d63a" opacity="0.7" font-family="Arial">INV</text>
+  <!-- Bottom-Right -->
+  <line x1="116" y1="110" x2="134" y2="128" stroke="#89B927" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="140" cy="134" r="10" fill="rgba(137,185,39,0.04)" stroke="#a4d63a" stroke-width="1.5" opacity="0.7"/>
+  <text x="140" y="137" text-anchor="middle" font-size="6" fill="#a4d63a" opacity="0.7" font-family="Arial">ANL</text>
+  <!-- Pulse from center -->
+  <circle cx="100" cy="95" r="30" fill="none" stroke="#89B927" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="30;45;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
